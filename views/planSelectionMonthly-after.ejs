@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Billing</title>
+  <link rel="stylesheet" href="public/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class = "monthly-page">
+  <h2 class = "heading">Choose the right plan for you</h2>
+  <div id = "cont" class="container">
+    <div class="row">
+      <div class="col-4">
+        <span class="chooseDays">
+          <form class="" action="planSelectionYearly" method="post">
+            <button class="monthly" type="submit" name="button">Monthly</button>
+            <button class="yearly" type="submit" name="button">Yearly</button>
+          </form>
+        </span>
+        <div class = "features">
+        <p>Monthly price</p>
+        <p>Video quality</p>
+        <p>Resolution</p>
+        <p>Devices you can use to watch</p>
+        </div>
+      </div>
+      <div class="col">
+        <form class="" action="planSelectionMonthly-after" method="post">
+        <button class="typeofdevice mobile" type="submit" name="data"  >Mobile</button>
+        </form>
+        <div class = "value">
+        <p>100</p>
+        <p>Good</p>
+        <p>480p</p>
+        <p>Phone</p>
+        <p>Tablet</p>
+        </div>
+      </div>
+      <div class="col">
+        <form class="" action="" method="post">
+        <button class="typeofdevice basic" type="button" name="basic">Basic</button>
+        </form>
+        <div class = "value">
+        <p>200</p>
+        <p>Good</p>
+        <p>480p</p>
+        <p>Phone</p>
+        <p>Tablet</p>
+        <p>computer</p>
+        <p>TV</p>
+        </div>
+      </div>
+      <div class="col">
+        <form class="" action="" method="post">
+        <button class="typeofdevice standard" type="button" name="standard">Standard</button>
+        </form>
+        <div class = "value">
+        <p>500</p>
+        <p>Better</p>
+        <p>1080p</p>
+        <p>Phone</p>
+        <p>Tablet</p>
+        <p>computer</p>
+        <p>TV</p>
+        </div>
+      </div>
+      <div class="col">
+        <form class="" action="" method="post">
+        <button class="typeofdevice premium" type="button" name="premium">Premium</button>
+        </form>
+        <div class = "value">
+          <p>700</p>
+          <p>Best</p>
+          <p>4k + HDR</p>
+          <p>Phone</p>
+          <p>Tablet</p>
+          <p>computer</p>
+          <p>TV</p>
+      </div>
+      </div>
+    </div>
+    <form class="" action="payment" method="post">
+      <button type="submit" name="price" class = "next" value = <%= price %>>Next</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>

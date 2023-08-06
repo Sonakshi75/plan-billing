@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Confirmation and payment</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body class = "payment-page">
+    <div id = "payment-status" class = "container">
+      <div class = "row">
+        <div id = "payment-details-cont"class = "col">
+          <h5>Current Plan Details <span class= "cancel">Cancelled</span></h5>
+          <p><%= plan %></p>
+          <p> <%= devices %> </p>
+          <h4> Rs 700</h4>
+          <form class="" action="planSelectionMonthly" method="post">
+            <button id = "change-plan"class = " btn" type="submit" name="button">Change Plan</button>
+          </form>
+          <p class = "info">Your subscription has started on <%=month%> <%=today %>th, <%= year%> and will auto renew on <%=month%> <%= today_renew%>th, <%= year_renew%></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  </body>
+</html>

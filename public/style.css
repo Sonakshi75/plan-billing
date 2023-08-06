@@ -1,0 +1,191 @@
+html,
+body {
+  height: 100%;
+}
+
+
+.home{
+  background-color: #1F4D91;
+  height:100%;
+}
+
+.form-signin {
+  right:18px;
+  top:100px;
+  position: absolute;
+  max-width: 380px;
+  padding: 50px;
+  margin: auto;
+
+}
+
+.button{
+  background-color: #1F4D91;
+  border-color: inherit;
+  padding: 3px;
+  color:white;
+}
+
+.chooseDays{
+  position: absolute;
+  background-color:  #1F4D91;
+  padding: 20px;
+  border-radius: 30px;
+  top:20%;
+}
+
+.monthly-page .monthly{
+  color:#1F4D91;
+  background-color: white;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.monthly-page .yearly{
+  border-radius: 30px;
+  border-style: none;
+  background-color: #1F4D91;
+  color: white;
+}
+
+
+.typeofdevice{
+
+  border-style: none;
+  background-color: #1F4D91;
+  color: white;
+  height: 100px;
+  width:100px;
+}
+
+#cont{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.heading{
+  text-align: center;
+  margin:3%;
+}
+
+.features{
+  margin-top: 40%;
+}
+
+.value{
+  margin-top: 15%;
+}
+
+.next{
+  position: absolute;
+  top: 90%;
+  left: 35%;
+  border-style: none;
+  background-color: #1F4D91;
+  color: white;
+  width : 30%;
+  height: 7%;
+}
+
+.yearly-page .monthly{
+  background-color: #1F4D91;
+  color: white;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.yearly-page .yearly{
+  color: #1F4D91;
+  background-color: white;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.payment-page{
+  background-color: #1F4D91;
+}
+
+#payment-details-cont{
+  background-color: white;
+  margin-left: 180px;
+  padding: 20px;
+}
+
+.payment-button{
+  background-color: #1F4D91;
+  color: white;
+  border-style: none;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.card-details{
+  width: 300px;
+}
+
+#order-summary{
+  background-color: #F5F4F7;
+  margin-right: 180px;
+  padding: 20px;
+}
+
+#summary{
+  right: 9px;
+  left: 9px;
+  top:30%;
+  position: absolute;
+  margin:auto;
+}
+
+
+#change-plan{
+  background-color: white;
+  color: #1F4D91;
+  border-color: #1F4D91;
+  border-style:solid;
+}
+
+#payment-status{
+  right: 150px;
+  left: 9px;
+  top:25%;
+  position: absolute;
+  margin:auto;
+  max-width: 800px;
+  border-radius: 50px;
+}
+
+
+.status{
+  color: #1F4D91;
+  background-color: #C4DEFC;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width : 2px;
+}
+
+.cancel-option{
+  position:absolute;
+  right:20px;
+  color: #1F4D91;
+}
+
+.info{
+  margin-top: 20px;
+  background-color: #F6F6F7;
+  padding:10px;
+}
+
+.cancel-btn{
+  background-color: white;
+  border-style: none;
+  color: #1F4D91;
+}
+
+.cancel{
+  color: red;
+  background-color: #FBF1F0;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  width : 2px;
+}
