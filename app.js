@@ -373,6 +373,9 @@ app.get("/planSelectionMonthly", function(req, res) {
   })
 });
 
+
+
+
 app.post("/planSelectionMonthly-after", function(req, res) {
   const price = req.body.data;
   var plan;
@@ -509,7 +512,43 @@ app.get('/planSelectionYearly', function(req, res) {
   res.render('planSelectionYearly')
 })
 
+app.get("/planSelectionYearly-after", function(req, res) {
 
+  const price = req.body.data;
+  var plan;
+  var cycle = "Yearly";
+  console.log(price)
+  if (price == 1000) {
+    plan = "Mobile"
+  } else if (price == 2000) {
+    plan = "Basic";
+  } else if (price == 5000) {
+    plan = "Standard";
+  } else {
+    plan = "Premium"
+  }
+
+  res.render('planSelectionYearly-after', {price : price, plan : plan, cycle: cycle});
+})
+
+app.post("/planSelectionYearly-after", function(req, res) {
+
+  const price = req.body.data;
+  var plan;
+  var cycle = "Yearly";
+  console.log(price)
+  if (price == 1000) {
+    plan = "Mobile"
+  } else if (price == 2000) {
+    plan = "Basic";
+  } else if (price == 5000) {
+    plan = "Standard";
+  } else {
+    plan = "Premium"
+  }
+
+  res.render('planSelectionYearly-after', {price : price, plan : plan, cycle: cycle});
+})
 
 app.get('/payment', function(req, res) {
   res.render('payment')
@@ -535,6 +574,19 @@ app.post('/payment', function(req, res) {
     plan = "Premium";
     cycle = "Monthly";
 
+  } else if(price == 1000){
+    plan = "Mobile";
+    cycle = "Yearly";
+  }else if(price == 2000){
+    plan = "Basic";
+    cycle = "Yearly";
+  }else if(price == 5000){
+    plan = "Standard";
+    cycle = "Yearly";
+  }else{
+
+      plan = "Premium";
+      cycle = "Yearly";
   }
   console.log(price)
 
