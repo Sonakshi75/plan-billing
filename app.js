@@ -478,8 +478,8 @@ app.post('/create-checkout-session', async (req, res) => {
     mode: 'payment',
     // success_url : "payment-status",
     // cancel_url : "payment-status",
-    success_url: `${YOUR_DOMAIN}/payment-status`,
-    cancel_url: `${YOUR_DOMAIN}/payment-status`,
+    success_url: `https://plan-billing2.onrender.com/payment-status`,
+    cancel_url: `https://plan-billing2.onrender.com/payment-status`,
   });
 
   res.redirect(303, session.url);
